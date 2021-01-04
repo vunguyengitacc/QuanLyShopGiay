@@ -105,6 +105,11 @@ namespace CuaHangBanGiay.GUI
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnAdmin_Click_1(object sender, EventArgs e)
+        {
             pnlNoiDung.Controls.Clear();
             setClickEventButton(btnAdmin);
             FormMenuAdmin frm = new FormMenuAdmin();

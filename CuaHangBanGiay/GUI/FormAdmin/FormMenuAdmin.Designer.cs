@@ -31,6 +31,7 @@ namespace CuaHangBanGiay.GUI.FormAdmin
         {
             this.btnnNhapKho = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnnNhapKho
@@ -46,6 +47,7 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.btnnNhapKho.TabIndex = 6;
             this.btnnNhapKho.Text = "Tạo Tài Khoản";
             this.btnnNhapKho.UseVisualStyleBackColor = false;
+            this.btnnNhapKho.Click += new System.EventHandler(this.btnnNhapKho_Click);
             // 
             // button1
             // 
@@ -60,15 +62,24 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.button1.TabIndex = 7;
             this.button1.Text = "Quản Lý Tài Khoản";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormAdmin
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(45, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(12, 23);
+            this.panel1.TabIndex = 8;
+            // 
+            // FormMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 511);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnnNhapKho);
-            this.Name = "FormAdmin";
+            this.Name = "FormMenuAdmin";
             this.Text = "FormAdmin";
             this.ResumeLayout(false);
 
@@ -78,5 +89,6 @@ namespace CuaHangBanGiay.GUI.FormAdmin
 
         private System.Windows.Forms.Button btnnNhapKho;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
