@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CuaHangBanGiay.GUI.FormKho;
 using CuaHangBanGiay.GUI.FormQuanLyBanHang;
 using CuaHangBanGiay.GUI.FormAdmin;
+using CuaHangBanGiay.GUI.FormQuanTriCuaHang;
 
 namespace CuaHangBanGiay.GUI
 {
@@ -61,29 +62,6 @@ namespace CuaHangBanGiay.GUI
         {
             pnlNoiDung.Controls.Clear();
             setClickEventButton(btnQuanLyBanHang);
-            FormQuanLyKho frm = new FormQuanLyKho();
-            pnlNoiDung.Height = frm.Height;
-            pnlNoiDung.AutoScroll = true;
-            foreach (Form frmItem in pnlNoiDung.Controls)
-            {
-                if (frmItem is FormQuanLyKho)
-                {
-                    frmItem.BringToFront();
-                    return;
-                }
-            }
-            frm.Dock = DockStyle.Fill;
-            frm.TopLevel = false;
-            frm.FormBorderStyle = 0;
-            pnlNoiDung.Controls.Add(frm);
-            frm.Show();
-            frm.BringToFront();
-        }
-
-        private void btnQuanLyKho_Click(object sender, EventArgs e)
-        {
-            pnlNoiDung.Controls.Clear();
-            setClickEventButton(btnQuanLyKho);
             FormQuanLyShop frm = new FormQuanLyShop();
             pnlNoiDung.Height = frm.Height;
             pnlNoiDung.AutoScroll = true;
@@ -103,9 +81,50 @@ namespace CuaHangBanGiay.GUI
             frm.BringToFront();
         }
 
+        private void btnQuanLyKho_Click(object sender, EventArgs e)
+        {
+            pnlNoiDung.Controls.Clear();
+            setClickEventButton(btnQuanLyKho);
+            FormQuanLyKho frm = new FormQuanLyKho();
+            pnlNoiDung.Height = frm.Height;
+            pnlNoiDung.AutoScroll = true;
+            foreach (Form frmItem in pnlNoiDung.Controls)
+            {
+                if (frmItem is FormQuanLyKho)
+                {
+                    frmItem.BringToFront();
+                    return;
+                }
+            }
+            frm.Dock = DockStyle.Fill;
+            frm.TopLevel = false;
+            frm.FormBorderStyle = 0;
+            pnlNoiDung.Controls.Add(frm);
+            frm.Show();
+            frm.BringToFront();
+        }
+
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            
+            pnlNoiDung.Controls.Clear();
+            setClickEventButton(btnQuanTriCuaHang);
+            FormMenuQuanTriCuaHang frm = new FormMenuQuanTriCuaHang(); 
+            pnlNoiDung.Height = frm.Height;
+            pnlNoiDung.AutoScroll = true;
+            foreach (Form frmItem in pnlNoiDung.Controls)
+            {
+                if (frmItem is FormMenuQuanTriCuaHang)
+                {
+                    frmItem.BringToFront();
+                    return;
+                }
+            }
+            frm.Dock = DockStyle.Fill;
+            frm.TopLevel = false;
+            frm.FormBorderStyle = 0;
+            pnlNoiDung.Controls.Add(frm);
+            frm.Show();
+            frm.BringToFront();
         }
 
         private void btnAdmin_Click_1(object sender, EventArgs e)

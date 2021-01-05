@@ -106,6 +106,24 @@
     <Compile Include="GUI\FormQuanLyBanHang\FormQuanLyShop.Designer.cs">
       <DependentUpon>FormQuanLyShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormMenuQuanTriCuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormMenuQuanTriCuaHang.Designer.cs">
+      <DependentUpon>FormMenuQuanTriCuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormQuanLyNhanVien.Designer.cs">
+      <DependentUpon>FormQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQuanTriCuaHang\FormThongKe.Designer.cs">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +161,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormQuanLyBanHang\FormQuanLyShop.resx">
       <DependentUpon>FormQuanLyShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQuanTriCuaHang\FormMenuQuanTriCuaHang.resx">
+      <DependentUpon>FormMenuQuanTriCuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQuanTriCuaHang\FormQuanLyNhanVien.resx">
+      <DependentUpon>FormQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQuanTriCuaHang\FormThongKe.resx">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

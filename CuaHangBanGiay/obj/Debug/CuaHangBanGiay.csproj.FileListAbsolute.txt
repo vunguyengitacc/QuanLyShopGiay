@@ -18,3 +18,6 @@ C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI
 C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormAdmin.FormMenuAdmin.resources
 C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormAdmin.FormQuanLyTaiKhoan.resources
 C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormAdmin.FormThemTaiKhoan.resources
+C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormQuanTriCuaHang.FormMenuQuanTriCuaHang.resources
+C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormQuanTriCuaHang.FormThongKe.resources
+C:\Users\Dell\Desktop\CuaHangBanGiay\CuaHangBanGiay\obj\Debug\CuaHangBanGiay.GUI.FormQuanTriCuaHang.FormQuanLyNhanVien.resources

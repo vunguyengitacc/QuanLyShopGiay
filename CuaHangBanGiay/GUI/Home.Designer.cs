@@ -30,15 +30,15 @@ namespace CuaHangBanGiay.GUI
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnQuanTriCuaHang = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnThongKe = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnQuanLyKho = new System.Windows.Forms.Button();
@@ -47,17 +47,13 @@ namespace CuaHangBanGiay.GUI
             this.btnQuanLyBanHang = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlNoiDung = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,8 +64,6 @@ namespace CuaHangBanGiay.GUI
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -80,6 +74,41 @@ namespace CuaHangBanGiay.GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 561);
             this.panel1.TabIndex = 1;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.btnAdmin);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 304);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(200, 34);
+            this.panel11.TabIndex = 15;
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Location = new System.Drawing.Point(12, 0);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAdmin.Size = new System.Drawing.Size(188, 34);
+            this.btnAdmin.TabIndex = 1;
+            this.btnAdmin.Text = "Quản Trị Hệ Thống";
+            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click_1);
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 270);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 34);
+            this.panel12.TabIndex = 14;
             // 
             // panel10
             // 
@@ -137,7 +166,7 @@ namespace CuaHangBanGiay.GUI
             // 
             this.panel7.Controls.Add(this.btnQuanTriCuaHang);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 304);
+            this.panel7.Location = new System.Drawing.Point(0, 236);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 34);
             this.panel7.TabIndex = 11;
@@ -159,40 +188,6 @@ namespace CuaHangBanGiay.GUI
             this.btnQuanTriCuaHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanTriCuaHang.UseVisualStyleBackColor = false;
             this.btnQuanTriCuaHang.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 270);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 34);
-            this.panel9.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnThongKe);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 236);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 34);
-            this.panel2.TabIndex = 9;
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.BackColor = System.Drawing.Color.DarkViolet;
-            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnThongKe.FlatAppearance.BorderSize = 0;
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Location = new System.Drawing.Point(12, 0);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnThongKe.Size = new System.Drawing.Size(188, 34);
-            this.btnThongKe.TabIndex = 1;
-            this.btnThongKe.Text = "Thống Kê";
-            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -280,41 +275,6 @@ namespace CuaHangBanGiay.GUI
             this.pnlNoiDung.Size = new System.Drawing.Size(684, 561);
             this.pnlNoiDung.TabIndex = 2;
             // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.btnAdmin);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 372);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(200, 34);
-            this.panel11.TabIndex = 15;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackColor = System.Drawing.Color.DarkViolet;
-            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdmin.FlatAppearance.BorderSize = 0;
-            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(12, 0);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAdmin.Size = new System.Drawing.Size(188, 34);
-            this.btnAdmin.TabIndex = 1;
-            this.btnAdmin.Text = "Quản Trị Hệ Thống";
-            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.UseVisualStyleBackColor = false;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click_1);
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 338);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(200, 34);
-            this.panel12.TabIndex = 14;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,13 +288,12 @@ namespace CuaHangBanGiay.GUI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.panel1.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -347,9 +306,6 @@ namespace CuaHangBanGiay.GUI
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnQuanTriCuaHang;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnQuanLyKho;

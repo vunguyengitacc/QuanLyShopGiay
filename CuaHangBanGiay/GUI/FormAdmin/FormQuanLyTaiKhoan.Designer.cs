@@ -35,6 +35,11 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvThongTin = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpadate = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
@@ -48,11 +53,6 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTin)).BeginInit();
@@ -134,6 +134,36 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.dgvThongTin.ReadOnly = true;
             this.dgvThongTin.Size = new System.Drawing.Size(592, 275);
             this.dgvThongTin.TabIndex = 46;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Username";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Password";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nhân Viên";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Chức Vụ";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Trạng Thái";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // btnDelete
             // 
@@ -272,36 +302,6 @@ namespace CuaHangBanGiay.GUI.FormAdmin
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(381, 22);
             this.textBox3.TabIndex = 6;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Username";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Password";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nhân Viên";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Chức Vụ";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Trạng Thái";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // FormQuanLyTaiKhoan
             // 
